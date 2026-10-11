@@ -1,13 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Edward Miller | Finance Portfolio">
+
+  <meta name="description"
+        content="Edward Miller's professional finance portfolio featuring financial analysis, valuation, and Excel modeling projects.">
+
   <title>Edward Miller | Finance Portfolio</title>
 
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
     :root {
@@ -49,7 +54,9 @@
       margin: auto;
     }
 
-    /* NAVIGATION */
+    /* =====================================
+       NAVIGATION
+    ===================================== */
 
     header {
       position: fixed;
@@ -96,7 +103,9 @@
       cursor: pointer;
     }
 
-    /* HERO */
+    /* =====================================
+       HOME / HERO SECTION
+    ===================================== */
 
     .hero {
       min-height: 100vh;
@@ -104,9 +113,13 @@
       align-items: center;
       position: relative;
       padding: 140px 0 90px;
+
       background:
-        radial-gradient(circle at 85% 35%,
-        rgba(214,173,101,0.12), transparent 36%),
+        radial-gradient(
+          circle at 85% 35%,
+          rgba(214,173,101,0.12),
+          transparent 36%
+        ),
         linear-gradient(135deg, #091525, #10243a);
     }
 
@@ -201,7 +214,9 @@
       transform: translateY(-3px);
     }
 
-    /* SECTIONS */
+    /* =====================================
+       GENERAL SECTION STYLING
+    ===================================== */
 
     section {
       padding: 105px 0;
@@ -234,7 +249,9 @@
       margin-bottom: 35px;
     }
 
-    /* ABOUT */
+    /* =====================================
+       ABOUT ME SECTION
+    ===================================== */
 
     .about {
       background: #0d1d30;
@@ -254,11 +271,18 @@
     }
 
     .about-card {
-      background: linear-gradient(145deg, #172d46, #102136);
+      background: linear-gradient(
+        145deg,
+        #172d46,
+        #102136
+      );
+
       border: 1px solid var(--border);
       padding: 35px;
       border-radius: 12px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.18);
     }
 
     .about-card h3 {
@@ -290,7 +314,9 @@
       font-weight: 600;
     }
 
-    /* SKILLS */
+    /* =====================================
+       SKILLS SECTION
+    ===================================== */
 
     .skills-grid {
       display: grid;
@@ -309,7 +335,9 @@
     .skill-card:hover {
       transform: translateY(-7px);
       border-color: var(--gold);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+      box-shadow:
+        0 15px 35px rgba(0,0,0,0.2);
     }
 
     .skill-icon {
@@ -317,9 +345,11 @@
       height: 52px;
       background: rgba(214,173,101,0.12);
       color: var(--gold);
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       border-radius: 10px;
       font-size: 24px;
       margin-bottom: 25px;
@@ -351,7 +381,9 @@
       margin-right: 12px;
     }
 
-    /* PROJECTS */
+    /* =====================================
+       PROJECTS SECTION
+    ===================================== */
 
     .projects {
       background: #0d1d30;
@@ -359,9 +391,11 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
       gap: 30px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
@@ -370,33 +404,50 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       overflow: hidden;
+
       display: flex;
       flex-direction: column;
+
       transition: 0.3s;
     }
 
     .project-card:hover {
       transform: translateY(-7px);
       border-color: rgba(214,173,101,0.6);
+
+      box-shadow:
+        0 20px 45px rgba(0,0,0,0.22);
     }
 
     .project-top {
-      min-height: 155px;
-      background: linear-gradient(135deg, #1b3956, #0b1c30);
+      min-height: 175px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1b3956,
+          #0b1c30
+        );
+
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 30px;
+
+      padding: 32px;
       position: relative;
       overflow: hidden;
     }
 
     .project-top::after {
       content: "";
-      width: 150px;
-      height: 150px;
-      border: 1px solid rgba(214,173,101,0.2);
+      width: 160px;
+      height: 160px;
+
+      border:
+        1px solid rgba(214,173,101,0.2);
+
       border-radius: 50%;
+
       position: absolute;
       right: -45px;
       top: -50px;
@@ -404,19 +455,21 @@
 
     .project-number {
       color: var(--gold);
-      font-size: 13px;
+      font-size: 12px;
+      font-weight: 700;
       letter-spacing: 2px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .project-top h3 {
-      font-size: 23px;
+      font-size: 26px;
       position: relative;
       z-index: 1;
+      max-width: 350px;
     }
 
     .project-body {
-      padding: 30px;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -424,41 +477,70 @@
 
     .project-body p {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.9;
       margin-bottom: 25px;
       flex: 1;
+    }
+
+    .project-highlights {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    .project-highlights li {
+      color: #c4ceda;
+      font-size: 13px;
+      padding: 8px 0;
+    }
+
+    .project-highlights li::before {
+      content: "✓";
+      color: var(--gold);
+      margin-right: 12px;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .tag {
       font-size: 11px;
-      padding: 6px 10px;
+      padding: 7px 11px;
       background: rgba(214,173,101,0.10);
       color: var(--gold);
       border-radius: 4px;
+      font-weight: 600;
     }
 
     .project-link {
-      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 13px 22px;
+      background: var(--gold);
+      color: var(--navy);
+
+      border-radius: 5px;
       font-weight: 700;
       font-size: 13px;
+
       align-self: flex-start;
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 4px;
+      transition: 0.3s;
     }
 
     .project-link:hover {
-      color: #f0ca84;
+      background: #f0ca84;
+      transform: translateY(-2px);
     }
 
-    /* FOOTER */
+    /* =====================================
+       FOOTER
+    ===================================== */
 
     footer {
       text-align: center;
@@ -472,12 +554,17 @@
       color: var(--gold);
     }
 
-    /* SCROLL ANIMATIONS */
+    /* =====================================
+       SCROLL ANIMATIONS
+    ===================================== */
 
     .reveal {
       opacity: 0;
       transform: translateY(25px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
     }
 
     .reveal.visible {
@@ -485,9 +572,12 @@
       transform: translateY(0);
     }
 
-    /* MOBILE */
+    /* =====================================
+       RESPONSIVE DESIGN
+    ===================================== */
 
     @media (max-width: 900px) {
+
       .about-grid {
         grid-template-columns: 1fr;
         gap: 35px;
@@ -496,9 +586,11 @@
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
     @media (max-width: 650px) {
+
       nav {
         min-height: 70px;
       }
@@ -513,11 +605,15 @@
         top: 70px;
         left: 0;
         width: 100%;
+
         background: #10243a;
+
         flex-direction: column;
         padding: 25px 5%;
         gap: 20px;
-        border-bottom: 1px solid var(--border);
+
+        border-bottom:
+          1px solid var(--border);
       }
 
       .nav-links.active {
@@ -550,9 +646,11 @@
         flex-direction: column;
         align-items: stretch;
       }
+
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       html {
         scroll-behavior: auto;
       }
@@ -562,81 +660,129 @@
         transform: none;
         transition: none;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =====================================
+       NAVIGATION
+  ===================================== -->
+
   <header>
+
     <nav class="container">
 
-      <button class="menu-toggle"
-              id="menuToggle"
-              aria-label="Toggle navigation"
-              aria-expanded="false">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
         ☰
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
       </ul>
 
     </nav>
+
   </header>
 
   <main>
 
-    <!-- HOME -->
+    <!-- =====================================
+         HOME
+    ===================================== -->
+
     <section class="hero" id="home">
+
       <div class="container">
+
         <div class="hero-content">
 
           <p class="eyebrow">
             Finance Student · Rutgers Business School
           </p>
 
-          <h1>Edward <span>Miller.</span></h1>
+          <h1>
+            Edward <span>Miller.</span>
+          </h1>
 
           <p class="hero-statement">
-            I am a Finance student at Rutgers Business School
-            passionate about corporate finance, financial analysis,
-            and using data-driven insights to solve complex
-            business challenges.
+            I am a Finance student at Rutgers Business
+            School passionate about corporate finance,
+            financial analysis, and using data-driven
+            insights to solve complex business challenges.
           </p>
 
           <div class="hero-details">
+
             <span>Rutgers University</span>
+
             <span>Class of 2028</span>
+
             <span>Corporate Finance</span>
+
           </div>
 
           <div class="buttons">
-            <a href="#projects" class="btn btn-primary">
+
+            <a
+              href="#projects"
+              class="btn btn-primary">
               Explore My Work →
             </a>
 
-            <a href="#about" class="btn btn-outline">
+            <a
+              href="#about"
+              class="btn btn-outline">
               Learn More About Me
             </a>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
-    <!-- ABOUT ME -->
+    <!-- =====================================
+         ABOUT ME
+    ===================================== -->
+
     <section class="about" id="about">
+
       <div class="container">
 
         <div class="about-grid">
 
           <div class="about-text reveal">
-            <p class="section-label">01 / About Me</p>
+
+            <p class="section-label">
+              01 / About Me
+            </p>
+
             <h2 class="section-title">
               Driven by Curiosity.<br>
               Focused on Growth.
@@ -645,42 +791,50 @@
             <div class="gold-line"></div>
 
             <p>
-              I am currently pursuing a Bachelor of Science
-              in Finance at Rutgers Business School,
-              with an expected graduation date of May 2028.
-              I have developed a strong interest in
-              corporate finance, financial decision-making,
-              and understanding how businesses create
-              long-term value.
+              I am currently pursuing a Bachelor
+              of Science in Finance at Rutgers
+              Business School, with an expected
+              graduation date of May 2028.
+              I have developed a strong interest
+              in corporate finance, financial
+              decision-making, and understanding
+              how businesses create long-term value.
             </p>
 
             <p>
-              Through my coursework in financial management,
-              accounting, operations, and quantitative analysis,
-              I have strengthened my analytical abilities
-              and developed a deeper understanding of
-              business strategy.
+              Through my coursework in financial
+              management, accounting, operations,
+              and quantitative analysis, I have
+              strengthened my analytical abilities
+              and developed a deeper understanding
+              of business strategy.
             </p>
 
             <p>
-              I am motivated by opportunities that challenge
-              me to learn, collaborate with others,
-              and continuously develop both personally
-              and professionally.
+              I am motivated by opportunities that
+              challenge me to learn, collaborate
+              with others, and continuously develop
+              both personally and professionally.
             </p>
+
           </div>
 
           <div class="about-card reveal">
+
             <h3>At a Glance</h3>
 
             <div class="detail">
               <small>University</small>
-              <strong>Rutgers Business School</strong>
+              <strong>
+                Rutgers Business School
+              </strong>
             </div>
 
             <div class="detail">
               <small>Degree</small>
-              <strong>Bachelor of Science in Finance</strong>
+              <strong>
+                Bachelor of Science in Finance
+              </strong>
             </div>
 
             <div class="detail">
@@ -690,235 +844,488 @@
 
             <div class="detail">
               <small>Academic Achievement</small>
-              <strong>Dean's List · 4 Semesters</strong>
+              <strong>
+                Dean's List · 4 Semesters
+              </strong>
             </div>
 
             <div class="detail">
               <small>Professional Interests</small>
-              <strong>Corporate Finance & Financial Analysis</strong>
+              <strong>
+                Corporate Finance & Financial Analysis
+              </strong>
             </div>
 
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- SKILLS -->
+    <!-- =====================================
+         SKILLS
+    ===================================== -->
+
     <section id="skills">
+
       <div class="container">
 
         <div class="reveal">
-          <p class="section-label">02 / My Expertise</p>
-          <h2 class="section-title">Skills & Capabilities</h2>
+
+          <p class="section-label">
+            02 / My Expertise
+          </p>
+
+          <h2 class="section-title">
+            Skills & Capabilities
+          </h2>
+
           <div class="gold-line"></div>
 
           <p class="section-description">
-            A combination of financial knowledge, technical
-            capabilities, and leadership experience that
-            I continue to develop through coursework
-            and professional opportunities.
+            A combination of financial knowledge,
+            technical capabilities, and leadership
+            experience that I continue to develop
+            through coursework and professional
+            opportunities.
           </p>
+
         </div>
 
         <div class="skills-grid">
 
+          <!-- FINANCIAL SKILLS -->
+
           <article class="skill-card reveal">
+
             <div class="skill-icon">◈</div>
+
             <h3>Finance & Analysis</h3>
 
             <ul class="skill-list">
+
               <li>Financial Statement Analysis</li>
+
               <li>Corporate Finance</li>
+
               <li>Capital Budgeting</li>
-              <li>Financial Valuation</li>
-              <li>Financial Reporting</li>
-              <li>Quantitative Analysis</li>
+
+              <li>Discounted Cash Flow Valuation</li>
+
+              <li>Weighted Average Cost of Capital</li>
+
+              <li>Financial Modeling</li>
+
             </ul>
+
           </article>
 
+          <!-- TECHNICAL SKILLS -->
+
           <article class="skill-card reveal">
+
             <div class="skill-icon">⌘</div>
+
             <h3>Technical Skills</h3>
 
             <ul class="skill-list">
+
               <li>Microsoft Excel</li>
+
               <li>Excel Solver</li>
+
               <li>HTML & CSS</li>
+
               <li>JavaScript</li>
+
               <li>Data Organization</li>
+
               <li>ERP Systems</li>
+
             </ul>
+
           </article>
 
+          <!-- LEADERSHIP SKILLS -->
+
           <article class="skill-card reveal">
+
             <div class="skill-icon">✦</div>
+
             <h3>Leadership & Business</h3>
 
             <ul class="skill-list">
+
               <li>Team Collaboration</li>
+
               <li>Leadership</li>
+
               <li>Problem-Solving</li>
+
               <li>Communication</li>
+
               <li>Time Management</li>
+
               <li>Adaptability</li>
+
             </ul>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
-    <!-- PROJECTS -->
+    <!-- =====================================
+         PROJECTS
+    ===================================== -->
+
     <section class="projects" id="projects">
+
       <div class="container">
 
         <div class="reveal">
-          <p class="section-label">03 / Selected Work</p>
-          <h2 class="section-title">Projects & Experience</h2>
+
+          <p class="section-label">
+            03 / Selected Work
+          </p>
+
+          <h2 class="section-title">
+            Financial Modeling Projects
+          </h2>
+
           <div class="gold-line"></div>
 
           <p class="section-description">
-            A selection of HTML projects demonstrating
-            my experience with web development,
-            page structure, and coding.
+            A selection of Excel-based financial
+            modeling projects demonstrating my
+            understanding of corporate valuation,
+            cost of capital, and financial analysis.
+            These projects apply financial concepts
+            to practical business decision-making.
           </p>
+
         </div>
 
         <div class="projects-grid">
 
-          <!-- PROJECT ONE -->
+          <!-- =================================
+               PROJECT 1: DCF MODEL
+          ================================= -->
+
           <article class="project-card reveal">
 
             <div class="project-top">
-              <span class="project-number">PROJECT / 01</span>
-              <h3>HTML Code</h3>
+
+              <span class="project-number">
+                PROJECT / 01 · FINANCIAL VALUATION
+              </span>
+
+              <h3>
+                Discounted Cash Flow (DCF) Model
+              </h3>
+
             </div>
 
             <div class="project-body">
 
               <p>
-                An HTML coding project demonstrating
-                my ability to build and structure
-                web pages using HTML.
-                This project reflects my experience
-                applying web development concepts
-                through hands-on coursework.
+                Developed an Excel-based Discounted
+                Cash Flow (DCF) model to estimate
+                a company's enterprise value using
+                projected future cash flows.
+                The model incorporates revenue
+                growth assumptions, operating
+                projections, free cash flow
+                calculations, and terminal value.
+                Future cash flows are discounted
+                using the weighted average cost
+                of capital to estimate the
+                present value of the business.
               </p>
 
+              <ul class="project-highlights">
+
+                <li>
+                  Five-year financial projections
+                </li>
+
+                <li>
+                  Free cash flow forecasting
+                </li>
+
+                <li>
+                  Terminal value estimation
+                </li>
+
+                <li>
+                  Enterprise valuation using WACC
+                </li>
+
+              </ul>
+
               <div class="tags">
-                <span class="tag">HTML</span>
-                <span class="tag">Web Development</span>
-                <span class="tag">Coding</span>
+
+                <span class="tag">
+                  Microsoft Excel
+                </span>
+
+                <span class="tag">
+                  DCF Valuation
+                </span>
+
+                <span class="tag">
+                  Financial Modeling
+                </span>
+
+                <span class="tag">
+                  Corporate Finance
+                </span>
+
               </div>
 
-              <a class="project-link"
-                 href="Assignment4.html"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                View Project ↗
+              <a
+                class="project-link"
+                href="DCFModel.xlsx"
+                download="DCFModel.xlsx">
+
+                Download DCF Model ↗
+
               </a>
 
             </div>
+
           </article>
 
-          <!-- PROJECT TWO -->
+          <!-- =================================
+               PROJECT 2: WACC CALCULATOR
+          ================================= -->
+
           <article class="project-card reveal">
 
             <div class="project-top">
-              <span class="project-number">PROJECT / 02</span>
-              <h3>HTML Code</h3>
+
+              <span class="project-number">
+                PROJECT / 02 · COST OF CAPITAL
+              </span>
+
+              <h3>
+                Weighted Average Cost of Capital
+                (WACC) Calculator
+              </h3>
+
             </div>
 
             <div class="project-body">
 
               <p>
-                An additional HTML project showcasing
-                my understanding of website structure,
-                HTML elements, and web page development.
-                This project highlights my ability
-                to apply technical skills through
-                practical coding exercises.
+                Created an Excel-based Weighted
+                Average Cost of Capital (WACC)
+                calculator to evaluate a company's
+                overall cost of financing.
+                The model incorporates the
+                company's capital structure,
+                cost of equity, cost of debt,
+                and corporate tax rate to
+                calculate WACC. This analysis
+                demonstrates how financing
+                decisions influence a company's
+                required rate of return and
+                investment valuation.
               </p>
 
+              <ul class="project-highlights">
+
+                <li>
+                  Equity and debt financing weights
+                </li>
+
+                <li>
+                  Cost of equity and cost of debt
+                </li>
+
+                <li>
+                  Corporate tax adjustments
+                </li>
+
+                <li>
+                  Weighted average cost of capital
+                </li>
+
+              </ul>
+
               <div class="tags">
-                <span class="tag">HTML</span>
-                <span class="tag">Website Design</span>
-                <span class="tag">Programming</span>
+
+                <span class="tag">
+                  Microsoft Excel
+                </span>
+
+                <span class="tag">
+                  WACC
+                </span>
+
+                <span class="tag">
+                  Capital Structure
+                </span>
+
+                <span class="tag">
+                  Financial Analysis
+                </span>
+
               </div>
 
-              <a class="project-link"
-                 href="example7.html"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                View Project ↗
+              <a
+                class="project-link"
+                href="WACC%20Calculator.xlsx"
+                download="WACC Calculator.xlsx">
+
+                Download WACC Calculator ↗
+
               </a>
 
             </div>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- =====================================
+       FOOTER
+  ===================================== -->
+
   <footer>
+
     <div class="container">
+
       <p>
         <strong>Edward Miller</strong>
         · Finance Portfolio · Rutgers University
       </p>
-      <p>© <span id="year"></span> All Rights Reserved.</p>
+
+      <p>
+        © <span id="year"></span>
+        All Rights Reserved.
+      </p>
+
     </div>
+
   </footer>
 
+  <!-- =====================================
+       JAVASCRIPT
+  ===================================== -->
+
   <script>
-    // Update copyright year automatically
+
+    // Automatically update copyright year
+
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
+
     // Mobile navigation
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", function() {
-      const isOpen = navLinks.classList.toggle("active");
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+
+    menuToggle.addEventListener(
+      "click",
+      function() {
+
+        const isOpen =
+          navLinks.classList.toggle("active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(isOpen)
+        );
+
+      }
+    );
+
+
+    // Close mobile menu after clicking a link
+
+    document.querySelectorAll(
+      ".nav-links a"
+    ).forEach(link => {
+
+      link.addEventListener(
+        "click",
+        function() {
+
+          navLinks.classList.remove("active");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        }
+      );
+
     });
 
-    // Close mobile menu after selecting a section
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", function() {
-        navLinks.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-    });
 
-    // Reveal content as visitors scroll
-    const elements = document.querySelectorAll(".reveal");
+    // Scroll reveal animations
+
+    const elements =
+      document.querySelectorAll(".reveal");
+
 
     if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
+
+      const observer =
+        new IntersectionObserver(entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        }, {
+          threshold: 0.1
         });
-      }, {
-        threshold: 0.1
+
+
+      elements.forEach(element => {
+
+        observer.observe(element);
+
       });
 
-      elements.forEach(element => observer.observe(element));
     } else {
+
       elements.forEach(element => {
+
         element.classList.add("visible");
+
       });
+
     }
+
   </script>
 
 </body>
 </html>
-
-
