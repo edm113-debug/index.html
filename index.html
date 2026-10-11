@@ -64,20 +64,9 @@
     nav {
       min-height: 78px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       gap: 20px;
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 25px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: var(--gold);
     }
 
     .nav-links {
@@ -370,8 +359,10 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .project-card {
@@ -502,8 +493,7 @@
         gap: 35px;
       }
 
-      .skills-grid,
-      .projects-grid {
+      .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -581,7 +571,6 @@
   <!-- NAVIGATION -->
   <header>
     <nav class="container">
-      <a href="#home" class="logo">Edward<span>.</span></a>
 
       <button class="menu-toggle"
               id="menuToggle"
@@ -596,6 +585,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
+
     </nav>
   </header>
 
@@ -647,8 +637,10 @@
 
           <div class="about-text reveal">
             <p class="section-label">01 / About Me</p>
-            <h2 class="section-title">Driven by Curiosity.<br>
-              Focused on Growth.</h2>
+            <h2 class="section-title">
+              Driven by Curiosity.<br>
+              Focused on Growth.
+            </h2>
 
             <div class="gold-line"></div>
 
@@ -668,14 +660,6 @@
               I have strengthened my analytical abilities
               and developed a deeper understanding of
               business strategy.
-            </p>
-
-            <p>
-              Outside the classroom, I am involved in
-              Little Investment Bankers of Rutgers (LIBOR)
-              and Pi Kappa Phi, where I have gained
-              experience in teamwork, leadership,
-              and working toward shared goals.
             </p>
 
             <p>
@@ -799,10 +783,9 @@
           <div class="gold-line"></div>
 
           <p class="section-description">
-            Selected academic and professional learning
-            experiences that demonstrate my analytical
-            thinking, financial knowledge, and interest
-            in business problem-solving.
+            A selection of HTML projects demonstrating
+            my experience with web development,
+            page structure, and coding.
           </p>
         </div>
 
@@ -813,31 +796,31 @@
 
             <div class="project-top">
               <span class="project-number">PROJECT / 01</span>
-              <h3>Corporate Finance Analysis</h3>
+              <h3>HTML Code</h3>
             </div>
 
             <div class="project-body">
 
               <p>
-                Analyzed corporate capital structure
-                decisions through financial coursework.
-                Evaluated the effects of debt and equity
-                financing on earnings per share, firm
-                value, and the weighted average cost
-                of capital.
+                An HTML coding project demonstrating
+                my ability to build and structure
+                web pages using HTML.
+                This project reflects my experience
+                applying web development concepts
+                through hands-on coursework.
               </p>
 
               <div class="tags">
-                <span class="tag">Corporate Finance</span>
-                <span class="tag">Capital Structure</span>
-                <span class="tag">Financial Analysis</span>
+                <span class="tag">HTML</span>
+                <span class="tag">Web Development</span>
+                <span class="tag">Coding</span>
               </div>
 
-              <!-- Replace # with a link to your project -->
               <a class="project-link"
-                 href="#"
-                 data-project-placeholder="true">
-                Project Reference ↗
+                 href="Assignment4.html"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View Project ↗
               </a>
 
             </div>
@@ -848,66 +831,31 @@
 
             <div class="project-top">
               <span class="project-number">PROJECT / 02</span>
-              <h3>Financial Valuation Studies</h3>
+              <h3>HTML Code</h3>
             </div>
 
             <div class="project-body">
 
               <p>
-                Explored financial valuation techniques
-                using time value of money, discounted
-                cash flows, and cost of capital concepts.
-                Applied quantitative methods to assess
-                financial decisions and investment
-                alternatives.
+                An additional HTML project showcasing
+                my understanding of website structure,
+                HTML elements, and web page development.
+                This project highlights my ability
+                to apply technical skills through
+                practical coding exercises.
               </p>
 
               <div class="tags">
-                <span class="tag">Valuation</span>
-                <span class="tag">Financial Modeling</span>
-                <span class="tag">DCF Concepts</span>
+                <span class="tag">HTML</span>
+                <span class="tag">Website Design</span>
+                <span class="tag">Programming</span>
               </div>
 
-              <!-- Replace # with a link to your project -->
               <a class="project-link"
-                 href="#"
-                 data-project-placeholder="true">
-                Project Reference ↗
-              </a>
-
-            </div>
-          </article>
-
-          <!-- PROJECT THREE -->
-          <article class="project-card reveal">
-
-            <div class="project-top">
-              <span class="project-number">PROJECT / 03</span>
-              <h3>Business Operations Analysis</h3>
-            </div>
-
-            <div class="project-body">
-
-              <p>
-                Applied operations management and
-                quantitative methods to business
-                decision-making problems, including
-                forecasting, resource allocation,
-                and optimization using Microsoft
-                Excel and Excel Solver.
-              </p>
-
-              <div class="tags">
-                <span class="tag">Excel Solver</span>
-                <span class="tag">Operations</span>
-                <span class="tag">Optimization</span>
-              </div>
-
-              <!-- Replace # with a link to your project -->
-              <a class="project-link"
-                 href="#"
-                 data-project-placeholder="true">
-                Project Reference ↗
+                 href="example7.html"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View Project ↗
               </a>
 
             </div>
@@ -973,19 +921,8 @@
         element.classList.add("visible");
       });
     }
-
-    // Warn during testing if project links are unfinished
-    document.querySelectorAll(
-      "[data-project-placeholder]"
-    ).forEach(link => {
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        alert(
-          "Add a real project reference before publishing your portfolio."
-        );
-      });
-    });
   </script>
 
 </body>
 </html>
+
